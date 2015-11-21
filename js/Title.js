@@ -18,8 +18,8 @@ function Title(INDEX){
         var delta = clock.getDelta();
         THREE.AnimationHandler.update( delta );
         this.time += 0.01;
-        this.mesh.rotation.y = Math.sin(this.time)*Math.PI/8;
-        this.mesh.rotation.x = Math.sin(this.time*0.5)*Math.PI/16;
+        // this.mesh.rotation.y = Math.sin(this.time)*Math.PI/8;
+        // this.mesh.rotation.x = Math.sin(this.time*0.5)*Math.PI/16;
     }
 
     

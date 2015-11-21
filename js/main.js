@@ -22,7 +22,9 @@ function init() {
     // camera.position.set(0,0,3650.445403598036);
     camera.position.set(0,0,750);
     controls = new THREE.OrbitControls(camera);
-    
+    controls.noZoom = true;
+    controls.noRotate = true;
+    controls.noPan = true;
     scene = new THREE.Scene();
 
     renderer = new THREE.WebGLRenderer( {alpha: true, antialias: true} );
