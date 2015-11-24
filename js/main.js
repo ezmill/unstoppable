@@ -65,18 +65,7 @@ function init() {
     
     window.addEventListener( 'resize', onWindowResize, false );
 
-    // initCharacter();
     initTitle();
-}
-function initCharacter(){
-    var loader = new THREE.JSONLoader();
-    loader.load( 'js/butterfly3.json', function( geometry, materials ) {
-        for(var i = 0; i < 10; i++){
-            var butterfly = new Butterfly(i);
-            butterfly.init(geometry);      
-            butterflies.push(butterfly);      
-        }
-    });
 }
 function initTitle(){
     var loader = new THREE.JSONLoader();
@@ -101,6 +90,8 @@ function onWindowResize( event ) {
     renderer.setSize( renderSize.w, renderSize.h );
     camera.aspect = renderSize.w/renderSize.h;
     camera.updateProjectionMatrix();
+
+    // title.resize(renderSize)
 }
 
 function animate() {

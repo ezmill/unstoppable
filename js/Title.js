@@ -18,7 +18,7 @@ function Title(INDEX){
         var delta = clock.getDelta();
         THREE.AnimationHandler.update( delta );
         this.time += 0.01;
-        // this.mesh.rotation.y = Math.sin(this.time)*Math.PI/8;
+        this.mesh.rotation.y = this.time;
         // this.mesh.rotation.x = Math.sin(this.time*0.5)*Math.PI/16;
     }
 
@@ -45,6 +45,9 @@ function Title(INDEX){
         this.mesh = new THREE.Mesh(GEO, material);
         this.mesh.scale.set(1,1,1);
         scene.add(this.mesh);
+    }
+    this.resize = function(rs){
+        // this.scale.set()
     }
 }
 
