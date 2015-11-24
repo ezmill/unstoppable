@@ -20,7 +20,7 @@ function init() {
     camera = new THREE.PerspectiveCamera(45, renderSize.w / renderSize.h, 1, 100000);
     // camera = new THREE.OrthographicCamera( window.innerWidth / - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, -10000, 10000 );
     // camera.position.set(0,0,3650.445403598036);
-    camera.position.set(0,0,750);
+    camera.position.set(0,0,1000);
     controls = new THREE.OrbitControls(camera);
     controls.noZoom = true;
     controls.noRotate = true;
